@@ -53,7 +53,10 @@ class App(Ctk.CTk):
         self._set_appearance_mode("dark")
 
         self.tab_view = MyTabView(master=self,width = 550,height = 450)
-        self.tab_view.place(x=20,y=20)
+        self.tab_view.place(x=20,y=15)
+
+        self.exit_button = Ctk.CTkButton(master=self, text="Exit",width=50,command=exit)
+        self.exit_button.place(x=530,y=470)
 
 app = App()
 app.mainloop()
